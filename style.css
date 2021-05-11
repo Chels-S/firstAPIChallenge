@@ -1,0 +1,21 @@
+body{
+    background: green;
+}
+
+#firstBox {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#secondBox {
+    display: flex;
+    justify-content: flex-start;
+}
+#firstPokemon, #secondPokemon {
+    width: 40%;
+}
+
+
+#firstPokemon ul li, #secondPokemon ul li {
+    list-style-type:none;
+}
