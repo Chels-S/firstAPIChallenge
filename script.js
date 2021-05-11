@@ -7,8 +7,8 @@ const attackNameSecond = document.getElementById('theSecondAttack');
 
 const nameOne= document.getElementById('firstPokemon');
 const nameTwo = document.getElementById('secondPokemon');
-nameOne.style.color = "blue";
-nameTwo.style.color = "red";
+nameOne.style.color = "black";
+nameTwo.style.color = "black";
 
 const pokeOneImage = document.getElementById('imageOne');
 const pokeTwoImage= document.getElementById('imageTwo');
@@ -118,7 +118,6 @@ function displayPokemonSecond(pokeMoves) {
 
 
 })
-
 
 
 

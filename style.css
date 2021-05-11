@@ -1,21 +1,102 @@
+/* GENERAL STYLES */
+
 body{
-    background: green;
+    /* background-image: url("https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/masters/forest.jpg"); */
+    background-image: url("./assets/orasBattle.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'KoHo', sans-serif;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  
 }
 
-#firstBox {
+ #firstBox {
+    /* display: flex;
+    justify-content: flex-end; */
+    /* background-color: pink; */
+    grid-column-start:2;
+    grid-column-end:2;
+    margin-left: 15%;
+  
+ } 
+
+ #secondBox {
+    /* display: flex;
+    justify-content: flex-start; */
+    grid-column-start:0;
+    grid-column-end: 0;
+    margin-right: 15%;
+  
+    
+}
+
+#firstPokemon, #secondPokemon {
+    /* width: 40%; */
+    /* background-color: transparent;
+    border-color: transparent; */
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+
+}
+
+
+
+/* NAME STYLE */
+
+#firstPokemon h1, #secondPokemon h1 {
+    text-transform: capitalize;
+    margin: 0;
+
+}
+
+#firstPokemon h1 {
+    
+}
+
+#secondPokemon h1 {
     display: flex;
     justify-content: flex-end;
+    
 }
 
-#secondBox {
-    display: flex;
-    justify-content: flex-start;
-}
-#firstPokemon, #secondPokemon {
-    width: 40%;
+
+
+
+
+/* IMAGE STYLE */
+
+#firstBox img {
+    height: 15em;
+    padding-left: 50%;    
 }
 
+#secondPokemon img {
+    height: 15em;
+  
+
+}
+
+/* MOVES STYLE */
+
+
+#firstPokemon ul, #secondPokemon ul {
+    
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    font-size: 30px;
+    padding-left: 0;
+
+    
+}
 
 #firstPokemon ul li, #secondPokemon ul li {
     list-style-type:none;
+    border: solid 1px grey;
+    
 }
